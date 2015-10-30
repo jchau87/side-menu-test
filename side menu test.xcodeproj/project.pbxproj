@@ -12,6 +12,7 @@
 		882642C51BE35D0F000759D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882642C31BE35D0F000759D7 /* Main.storyboard */; };
 		882642C71BE35D0F000759D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882642C61BE35D0F000759D7 /* Assets.xcassets */; };
 		882642CA1BE35D0F000759D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882642C81BE35D0F000759D7 /* LaunchScreen.storyboard */; };
+		882642D81BE36265000759D7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882642D71BE36265000759D7 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		882642C61BE35D0F000759D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		882642C91BE35D0F000759D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		882642CB1BE35D0F000759D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		882642D51BE36265000759D7 /* side menu test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "side menu test-Bridging-Header.h"; sourceTree = "<group>"; };
+		882642D61BE36265000759D7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		882642D71BE36265000759D7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,25 @@
 		882642BE1BE35D0F000759D7 /* side menu test */ = {
 			isa = PBXGroup;
 			children = (
+				882642D91BE362F2000759D7 /* SWRevealViewController */,
 				882642BF1BE35D0F000759D7 /* AppDelegate.swift */,
 				882642C11BE35D0F000759D7 /* ViewController.swift */,
 				882642C31BE35D0F000759D7 /* Main.storyboard */,
 				882642C61BE35D0F000759D7 /* Assets.xcassets */,
 				882642C81BE35D0F000759D7 /* LaunchScreen.storyboard */,
 				882642CB1BE35D0F000759D7 /* Info.plist */,
+				882642D51BE36265000759D7 /* side menu test-Bridging-Header.h */,
 			);
 			path = "side menu test";
+			sourceTree = "<group>";
+		};
+		882642D91BE362F2000759D7 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				882642D61BE36265000759D7 /* SWRevealViewController.h */,
+				882642D71BE36265000759D7 /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +152,7 @@
 			files = (
 				882642C21BE35D0F000759D7 /* ViewController.swift in Sources */,
 				882642C01BE35D0F000759D7 /* AppDelegate.swift in Sources */,
+				882642D81BE36265000759D7 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +263,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "side menu test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chowfun.side-menu-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "side menu test/side menu test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -258,10 +277,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "side menu test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chowfun.side-menu-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "side menu test/side menu test-Bridging-Header.h";
 			};
 			name = Release;
 		};
