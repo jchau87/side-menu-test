@@ -13,6 +13,7 @@
 		882642C71BE35D0F000759D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882642C61BE35D0F000759D7 /* Assets.xcassets */; };
 		882642CA1BE35D0F000759D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882642C81BE35D0F000759D7 /* LaunchScreen.storyboard */; };
 		882642D81BE36265000759D7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882642D71BE36265000759D7 /* SWRevealViewController.m */; };
+		882642DB1BE473C1000759D7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882642DA1BE473C1000759D7 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		882642D51BE36265000759D7 /* side menu test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "side menu test-Bridging-Header.h"; sourceTree = "<group>"; };
 		882642D61BE36265000759D7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		882642D71BE36265000759D7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		882642DA1BE473C1000759D7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				882642BF1BE35D0F000759D7 /* AppDelegate.swift */,
 				882642C11BE35D0F000759D7 /* ViewController.swift */,
 				882642C31BE35D0F000759D7 /* Main.storyboard */,
+				882642DA1BE473C1000759D7 /* MainViewController.swift */,
 				882642C61BE35D0F000759D7 /* Assets.xcassets */,
 				882642C81BE35D0F000759D7 /* LaunchScreen.storyboard */,
 				882642CB1BE35D0F000759D7 /* Info.plist */,
@@ -153,6 +156,7 @@
 				882642C21BE35D0F000759D7 /* ViewController.swift in Sources */,
 				882642C01BE35D0F000759D7 /* AppDelegate.swift in Sources */,
 				882642D81BE36265000759D7 /* SWRevealViewController.m in Sources */,
+				882642DB1BE473C1000759D7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1857,7 +1857,7 @@ NSString * const SWSegueRightIdentifier = @"sw_right";
     
     else if ( [identifier isEqualToString:SWSegueRearIdentifier] )
         operation = SWRevealControllerOperationReplaceRearController;
-    
+  
     else if ( [identifier isEqualToString:SWSegueRightIdentifier] )
         operation = SWRevealControllerOperationReplaceRightController;
     

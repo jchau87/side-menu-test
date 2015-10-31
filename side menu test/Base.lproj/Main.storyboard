@@ -20,10 +20,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="UVx-mw-IjT" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="uo8-Nt-qfs"/>
+                        <segue destination="kQK-S5-avE" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="teE-cb-3DG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="235.5" y="318.5"/>
+            <point key="canvasLocation" x="179.5" y="318.5"/>
         </scene>
         <!--Sidebar-->
         <scene sceneID="qPy-vQ-uRc">
@@ -209,48 +213,10 @@
             </objects>
             <point key="canvasLocation" x="732.5" y="-458.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="733-yF-keG">
-            <objects>
-                <viewController id="sJW-sA-IXL" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="K3q-HM-acx"/>
-                        <viewControllerLayoutGuide type="bottom" id="rO0-SM-hxR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8ki-OX-EZa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2yd-vm-QtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1282.5" y="-458.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="m9x-y9-TCs">
-            <objects>
-                <navigationController id="S4S-hz-WHT" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Si-BB-d7X">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Qum-5P-lQa" kind="show" id="e5z-Se-00f"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ste-c6-z3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="732.5" y="318.5"/>
-        </scene>
         <!--Main View-->
         <scene sceneID="bUh-R3-Ine">
             <objects>
-                <viewController title="Main View" id="Qum-5P-lQa" sceneMemberID="viewController">
+                <viewController title="Main View" id="Qum-5P-lQa" customClass="MainViewController" customModule="side_menu_test" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qDL-gL-hIP"/>
                         <viewControllerLayoutGuide type="bottom" id="3TA-iv-y7X"/>
@@ -319,11 +285,36 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="You" id="sp8-1A-HJw"/>
+                    <navigationItem key="navigationItem" title="You" id="sp8-1A-HJw">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="add" id="Hkn-GU-7Qm"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="Hkn-GU-7Qm" id="lcT-kn-rgd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0U-Jz-PtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1282.5" y="318.5"/>
+            <point key="canvasLocation" x="1287.5" y="318.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CS5-an-hSm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kQK-S5-avE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bg3-m8-vWh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qum-5P-lQa" kind="relationship" relationship="rootViewController" id="E9C-wq-CD4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KNU-Lc-rCA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="732.5" y="318.5"/>
         </scene>
     </scenes>
 </document>
